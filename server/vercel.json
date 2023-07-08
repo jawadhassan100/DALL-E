@@ -36,8 +36,12 @@
     ],
     "routes":[
         {
-            "src":"/(.*)",
-            "dest":"/"
+          "src": "/api/v1/post",
+          "dest": "api/v1/post"
+        },
+        {
+          "src": "/api/v1/dalle",
+          "dest": "api/v1/dalle"
         }
     ]
 }
