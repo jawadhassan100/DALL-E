@@ -10,7 +10,11 @@ dotenv.config();
 
 const app = express();
 app.use(
-  cors()
+  cors({
+    origin: ["https://dall-e-nine-plum.vercel.app"],
+    methods: ["POST" , "GET"],
+    credentials: true
+  })
 );
 app.use(express.json({ limit: "50mb" }));
 
